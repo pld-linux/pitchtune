@@ -16,12 +16,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Pitchtune -- Precise Instrument Tweaking for Crispy Harmony - tuner.
-A GPL'ed GTK oscilloscope-style musical instrument tuning program.
+A GPL'ed GTK+ oscilloscope-style musical instrument tuning program.
 It can also be used to find the frequency of sounds.
 
 %description -l pl
 Pitchtune -- Precise Instrument Tweaking for Crispy Harmony - tuner.
-ZGPL-izowany program w stylu oscyloskopu GTK do strojenia
+ZGPL-izowany program w stylu oscyloskopu GTK+ do strojenia
 instrumentów. Mo¿e byæ równie¿ u¿ywany do znajdowania czêstotliwo¶ci
 d¼wiêków.
 
