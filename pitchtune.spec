@@ -6,13 +6,12 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
 Vendor:		Haakon Andre Hjortland <hahjortland@tande.com>
-Source0:	http://prdownloads.sourceforge.net/pitchtune/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pitchtune/%{name}-%{version}.tar.gz
 URL:		http://pitchtune.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Pitchtune -- Precise Instrument Tweaking for Crispy Harmony - tuner.
