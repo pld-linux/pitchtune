@@ -30,9 +30,10 @@ d¼wiêków.
 %setup  -q
 
 %build
+rm -f missing
 aclocal
 autoconf
-automake -a -f
+automake -a -c -f
 %configure
 %{__make}
 
