@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Sound
 Vendor:		Haakon Andre Hjortland <hahjortland@tande.com>
 Source0:	http://dl.sourceforge.net/pitchtune/%{name}-%{version}.tar.gz
+# Source0-md5:	6373234902851950bd73ea4eac6cc2f4
 URL:		http://pitchtune.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
