@@ -4,7 +4,7 @@ Name:		pitchtune
 Version:	0.0.3
 Release:	1
 License:	GPL
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Vendor:		Haakon Andre Hjortland <hahjortland@tande.com>
 Source0:	http://prdownloads.sourceforge.net/pitchtune/%{name}-%{version}.tar.gz
 URL:		http://pitchtune.sourceforge.net/
