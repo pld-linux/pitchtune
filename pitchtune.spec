@@ -1,17 +1,19 @@
 Summary:	Instrument tuner
 Summary(pl):	Stroik do instrumentów
 Name:		pitchtune
-Version:	0.0.3
+Version:	0.0.4
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications/Sound
 Vendor:		Haakon Andre Hjortland <hahjortland@tande.com>
-Source0:	http://dl.sourceforge.net/pitchtune/%{name}-%{version}.tar.gz
-# Source0-md5:	6373234902851950bd73ea4eac6cc2f4
+Source0:	http://dl.sourceforge.net/pitchtune/%{name}-%{version}.tar.bz2
+# Source0-md5:	7b2535c9a70a262838c2d149fbff31e7
 URL:		http://pitchtune.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+-devel
+BuildRequires:	alsa-lib-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	pkgconfig >= 1:0.9.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,16 +40,18 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install doc/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
-install src/%{name} $RPM_BUILD_ROOT%{_bindir}
+make install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+# will install manually what is useful
+rm -rf $RPM_BUILD_ROOT%{_docdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.htm
+%doc AUTHORS ChangeLog README TODO doc/*.htm
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
