@@ -1,5 +1,5 @@
 Summary:	Instrument tuner
-Summary(pl):	Stroik do instrumentów
+Summary(pl.UTF-8):   Stroik do instrumentÃ³w
 Name:		pitchtune
 Version:	0.0.4
 Release:	1
@@ -21,11 +21,11 @@ Pitchtune -- Precise Instrument Tweaking for Crispy Harmony - tuner.
 A GPL'ed GTK+ oscilloscope-style musical instrument tuning program.
 It can also be used to find the frequency of sounds.
 
-%description -l pl
+%description -l pl.UTF-8
 Pitchtune -- Precise Instrument Tweaking for Crispy Harmony - tuner.
 ZGPL-izowany program w stylu oscyloskopu GTK+ do strojenia
-instrumentów. Mo¿e byæ równie¿ u¿ywany do znajdowania czêstotliwo¶ci
-d¼wiêków.
+instrumentÃ³w. MoÅ¼e byÄ‡ rÃ³wnieÅ¼ uÅ¼ywany do znajdowania czÄ™stotliwoÅ›ci
+dÅºwiÄ™kÃ³w.
 
 %prep
 %setup  -q
