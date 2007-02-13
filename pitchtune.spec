@@ -1,5 +1,5 @@
 Summary:	Instrument tuner
-Summary(pl.UTF-8):   Stroik do instrumentów
+Summary(pl.UTF-8):	Stroik do instrumentów
 Name:		pitchtune
 Version:	0.0.4
 Release:	1
